@@ -1,0 +1,11 @@
+<p>comp1 works!</p>
+
+<clr-datagrid>
+    <clr-dg-column>Cat Facts</clr-dg-column>
+  
+    <clr-dg-row *ngFor="let cat of cats">
+      <clr-dg-cell>{{cat.text}}</clr-dg-cell>
+    </clr-dg-row>
+  
+    <clr-dg-footer>{{cats.length}} cat facts</clr-dg-footer>
+</clr-datagrid>
